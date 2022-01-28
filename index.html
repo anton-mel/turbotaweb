@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>TurBOTa Extension - v1.2.9</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" href="img/ico.png" sizes="128x128" type="image/png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+
+	<div class="menu">
+		<div class="left-menu">
+			<a href="https://www.turbota.tk" target="_blank"><img src="img/logo.svg" class="logo"></a>
+			<span></span>
+			<ul class="nav">
+				<li class="downloadmenub d"><!-- <p class="navlip"> --><!-- <i class="fa fa-angle-down" aria-hidden="true"></i> -->#Download<!-- </p> -->
+
+					<!-- <ul class="versions">
+						<li><a href="#"><img src="img/v/t.png"><h6>turbota - v1.2.9</h6></a></li>
+						<li><a href="#"><img src="img/v/t.png"><h6>turbota - v1.2.8</h6></a></li>
+						<li><a href="#"><img src="img/v/t.png"><h6>turbota - v1.2.7</h6></a></li>
+						<li><a href="#"><img src="img/v/t.png"><h6>turbota - v1.2.6</h6></a></li>
+					</ul> -->
+
+				</li>
+				<li class="m">#Mission</li>
+				<li class="a">#About</li>
+			</ul>
+		</div>
+		<div class="right-menu">
+			<div class="star-rating">
+		      <div class="star-rating__wrap">
+		        <label class="star-rating__ico" for="star-rating-5"> <input class="star-rating__input" id="star-rating-5" type="radio" name="rating" value="5"></label>
+		        <label class="star-rating__ico" for="star-rating-4"> <input class="star-rating__input" id="star-rating-4" type="radio" name="rating" value="4"></label>
+		        <label class="star-rating__ico" for="star-rating-3"> <input class="star-rating__input" id="star-rating-3" type="radio" name="rating" value="3"></label>
+		        <label class="star-rating__ico " for="star-rating-2"> <input class="star-rating__input" id="star-rating-2" type="radio" name="rating" value="2"></label>
+		        <label class="star-rating__ico " for="star-rating-1"> <input class="star-rating__input" id="star-rating-1" type="radio" name="rating" value="1"></label>
+		      </div>
+		    </div>
+		    <a class="telegrambot" href="#"><p>Telegram</p><i class="fa fa-bolt" aria-hidden="true"></i></a>
+		</div>
+	</div>
+
+	<video autoplay muted loop id="myVideo">
+		<source src="bg.mp4" type="video/mp4">
+	</video>
+
+	<div class="bg">
+
+
+
+		<!-- <img class="leaf" src="img/leaf.svg"> -->
+		
+		<div class="container">
+			<div class="leftcont">
+				<h1>TurBOTa for Chrome</h1>
+				<p>Check the cruelty-free status of the brands faster with TurBOTa for Chrome! Developed with love by NGO ESMU team!</p>
+				<div class="btns">
+					<a target="_blank" href="https://chrome.google.com/webstore/detail/turbota-for-chrome/pkaofffddmleggdkmemhadkbbfiaipfa"><span>Add to Chrome<i class="fa fa-cloud-download" aria-hidden="true"></i></span></a>
+					<a target="_blank" href="https://chrome.google.com/webstore/detail/turbota-for-chrome/pkaofffddmleggdkmemhadkbbfiaipfa"><span>Add to Safari<i class="fa fa-cloud-download" aria-hidden="true"></i></span></a>
+				</div>
+			</div>
+			<div class="rightcont">
+				<p class="chanhetextmenu">This extension goes through the web page you open, finds brands on it, and shows whether these brands test their products on animals or not. It takes just one second, and you already know the cruelty-free status of a particular brand from the notification in the bottom right corner of your screen. You can also easily turn off/on all our functions whenever you want.<br><br>For now, we use a database of 600+ brands and plan to enlarge it with new updates. So, if the brand you are looking for is missing in our database, you can request to add it through the expansion's popup.</p>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="footer">
+		<p>Website developed by NGO ESMU in 2022, Ukraine</p>
+		<div id="myBtn" onclick="myFunction()"><span>Pause Video</span></div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.js" integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI=" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		// $(".downloadmenub").hover(function(){
+		// 	$(".navlip").css({"opacity":"1"});
+		// 	$(".versions").css({"display":"flex"});
+		// 	$(".versions").hover(function(){
+		// 		$(".navlip").css({"opacity":"1"});
+		// 	});
+		// }, function(){
+		// 	$(".versions").hide();
+		// 	$(".navlip").css({"opacity":".5"});
+		// });
+
+		$(".star-rating__wrap").click(function(){
+			window.open('https://chrome.google.com/webstore/detail/turbota-for-chrome/pkaofffddmleggdkmemhadkbbfiaipfa', '_blank').focus();
+		});
+
+		$home = 'This extension goes through the web page you open, finds brands on it, and shows whether these brands test their products on animals or not. It takes just one second, and you already know the cruelty-free status of a particular brand from the notification in the bottom right corner of your screen. You can also easily turn off/on all our functions whenever you want.<br><br>For now, we use a database of 600+ brands and plan to enlarge it with new updates. So, if the brand you are looking for is missing in our database, you can request to add it through the expansion\'s popup.';
+
+		$mission = 'Acquiring products that are not tested on animals encourages brands to move to a cruelty-free philosophy and be certified by PETA (People for the Ethical Treatment of Animals). In-vitro testing and safe micro-dosing of human volunteers can replace cruel and immoral animal testing. The culture of cruelty-free consumption is not widespread in Ukraine today, so our team is inspired by the fact that TurBOTA will accelerate its development among the younger generation. Download this extension to be aware of brands that ignore this issue or use non-natural materials for their products.';
+
+		$about = 'description about us';
+
+		$(".d").click(function(){
+			$(".chanhetextmenu").html($home);
+		});
+
+		$(".m").click(function(){
+			$(".chanhetextmenu").html($mission);
+		});
+
+		$(".a").click(function(){
+			$(".chanhetextmenu").html($about);
+		});
+		
+	</script>
+
+</body>
+</html>
+
+<script>
+// Get the video
+var video = document.getElementById("myVideo");
+
+// Get the button
+var btn = document.getElementById("myBtn");
+
+// Pause and play the video, and change the button text
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause Video";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play Video";
+  }
+}
+</script>
